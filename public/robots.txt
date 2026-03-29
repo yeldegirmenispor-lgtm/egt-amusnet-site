@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://egtslotrehberi.com/sitemap.xml
+Sitemap: https://radyoarabeskturk.com/sitemap.xml

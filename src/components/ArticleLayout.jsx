@@ -11,7 +11,7 @@ const authors = {
     years: 10,
     education: 'İstanbul Üniversitesi — Matematik',
     social: '@kaan_slotanaliz',
-    email: 'kaan@egtslotrehberi.com',
+    email: 'kaan@radyoarabeskturk.com',
   },
   ece: {
     name: 'Ece Tuncer',
@@ -21,7 +21,7 @@ const authors = {
     years: 7,
     education: 'Koç Üniversitesi — İşletme',
     social: '@ece_casinostrateji',
-    email: 'ece@egtslotrehberi.com',
+    email: 'ece@radyoarabeskturk.com',
   },
   deniz: {
     name: 'Deniz Karaoğlu',
@@ -31,7 +31,7 @@ const authors = {
     years: 6,
     education: 'Ankara Üniversitesi — Uluslararası İlişkiler',
     social: '@deniz_casinopro',
-    email: 'deniz@egtslotrehberi.com',
+    email: 'deniz@radyoarabeskturk.com',
   },
   onur: {
     name: 'Onur Saraç',
@@ -41,7 +41,7 @@ const authors = {
     years: 9,
     education: 'Yıldız Teknik Üniversitesi — Bilgisayar Mühendisliği',
     social: '@onursarac_seo',
-    email: 'onur@egtslotrehberi.com',
+    email: 'onur@radyoarabeskturk.com',
   },
 };
 
@@ -69,9 +69,9 @@ export default function ArticleLayout({ title, description, path, authorKey, edi
     publisher: {
       '@type': 'Organization',
       name: 'EGT Slot Rehberi',
-      url: 'https://egtslotrehberi.com',
+      url: 'https://radyoarabeskturk.com',
     },
-    mainEntityOfPage: `https://egtslotrehberi.com${path}`,
+    mainEntityOfPage: `https://radyoarabeskturk.com${path}`,
   };
 
   return (
