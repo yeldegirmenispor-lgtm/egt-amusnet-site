@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  --color-egt-red: #B71C1C;
+  --color-egt-gold: #F57F17;
+  --color-egt-purple: #4A148C;
+  --color-egt-dark: #1A0000;
+  --color-egt-cream: #FFF9F0;
+  --color-egt-flame: #FF6F00;
+  --color-egt-navy: #1A237E;
+  --color-egt-card: rgba(255, 255, 255, 0.05);
+  --color-egt-glass: rgba(255, 255, 255, 0.08);
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #1A0000 0%, #0D0005 100%);
+  color: white;
+  min-height: 100vh;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Glow effects */
+.glow-red {
+  box-shadow: 0 0 20px rgba(183, 28, 28, 0.3), 0 0 60px rgba(183, 28, 28, 0.1);
+}
+
+.glow-gold {
+  box-shadow: 0 0 20px rgba(245, 127, 23, 0.3), 0 0 60px rgba(245, 127, 23, 0.1);
+}
+
+.glow-purple {
+  box-shadow: 0 0 20px rgba(74, 20, 140, 0.3), 0 0 60px rgba(74, 20, 140, 0.1);
+}
+
+/* Slot reel spin animation */
+@keyframes spin-reel {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(0); }
+}
+
+/* Jackpot card flip animation */
+@keyframes card-flip {
+  0% { transform: perspective(600px) rotateY(0deg); }
+  50% { transform: perspective(600px) rotateY(90deg); }
+  100% { transform: perspective(600px) rotateY(0deg); }
+}
+
+/* Fire pulse animation */
+@keyframes fire-pulse {
+  0%, 100% { transform: scale(1); filter: brightness(1); }
+  50% { transform: scale(1.08); filter: brightness(1.4); }
+}
+
+.animate-spin-reel {
+  animation: spin-reel 0.6s ease-out forwards;
+}
+
+.animate-card-flip {
+  animation: card-flip 0.8s ease-in-out forwards;
+}
+
+.animate-fire-pulse {
+  animation: fire-pulse 1s ease-in-out infinite;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1A0000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #B71C1C, #F57F17);
+  border-radius: 4px;
+}

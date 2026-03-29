@@ -1,0 +1,25 @@
+{
+  "name": "EGT ve Amusnet Slot Oyunlari",
+  "short_name": "EGT Slots",
+  "theme_color": "#B71C1C",
+  "background_color": "#1A0000",
+  "display": "standalone",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-64x64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    }
+  ]
+}
